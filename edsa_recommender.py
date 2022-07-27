@@ -31,6 +31,11 @@ import streamlit as st
 # Data handling dependencies
 import pandas as pd
 import numpy as np
+import surprise
+
+from surprise import SVD
+from surprise import Dataset
+from surprise.model_selection import cross_validate
 
 # Custom Libraries
 from utils.data_loader import load_movie_titles
